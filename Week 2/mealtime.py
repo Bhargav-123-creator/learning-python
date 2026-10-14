@@ -12,9 +12,10 @@ def main():
     elif y == "pm":
         if hour != 12:
             hour += 12
-        time = hour + (minute/60) + 12
+        time = hour + (minute/60)
     else:
         print("nothing")
+        return 
     mealtime(time)
 
 
